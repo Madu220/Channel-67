@@ -113,7 +113,7 @@ function pularPalavra() {
     iErradas = iErradas + 1;
     
     var resposta = sPerguntas[iSorteados[iJogada]][0];
-    mostrarMensagem("", "Palavra Pulada!", "A resposta era: " + resposta, "#ff8844");
+    mostrarMensagem("Pular", "Palavra Pulada!", "A resposta era: " + resposta, "#ff8844");
 }
 
 // Cria as estrelinhas e glitter no fundo
