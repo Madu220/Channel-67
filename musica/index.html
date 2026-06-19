@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Musical 🎵</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Background glitter dinâmico -->
+<div class="glitter-bg" id="glitterBackground"></div>
+
+<!-- Botão de voltar -->
+<a href="../index.html" class="botao-voltar" title="Voltar ao Hub de Jogos">
+  <span class="voltar-icone">🏠</span>
+  <span class="voltar-texto">Voltar</span>
+</a>
+
+<div id="app">
+  <div class="cabecalho">
+    <div class="icone-cabecalho">🎵</div>
+    <h1>Quiz Musical</h1>
+    <p>◈ adivinhe a música ◈</p>
+  </div>
+  
+  <div class="tela ativa" id="tela-inicio">
+    <div class="titulo-secao">
+      <span class="icone-secao">🎤</span>
+      <h2>Escolha seu Artista</h2>
+    </div>
+    <div class="grid-artistas" id="grid-artistas"></div>
+  </div>
+  
+  <div class="tela" id="tela-quiz">
+    <div class="topo-quiz">
+      <button class="btn-voltar" onclick="voltarInicio()">◀ Voltar</button>
+      <div class="tag" id="tag-rodada">Rodada 1/10</div>
+      <div class="tag tag-pontos">⭐ <span id="pontos">0</span></div>
+    </div>
+    <div class="card-musica">
+      <div class="capa-album" id="capa-album"><span class="icone">🎧</span></div>
+      <div class="label-quiz">🎶 Qual é esta música de</div>
+      <div class="nome-artista-quiz" id="nome-artista-quiz">---</div>
+      <div class="player" id="player"></div>
+    </div>
+    <div class="grid-alternativas" id="alternativas"></div>
+    <div class="feedback escondido" id="feedback"></div>
+  </div>
+  
+  <div class="tela" id="tela-resultado">
+    <div class="caixa-resultado">
+      <div class="trofeu">🏆</div>
+      <span class="emoji-resultado" id="emoji-resultado">🎉</span>
+      <div class="titulo-resultado" id="titulo-resultado">Parabéns!</div>
+      <div class="pontuacao-final">
+        <span class="numero-resultado" id="numero-resultado">0</span>
+        <span class="de-resultado" id="de-resultado">de 10 acertos</span>
+      </div>
+      <div class="msg-resultado" id="msg-resultado"></div>
+    </div>
+    <div class="titulo-respostas">📋 Suas Respostas</div>
+    <div class="lista-respostas" id="lista-respostas"></div>
+    <button class="btn-primario" onclick="jogarNovamente()">🎮 Jogar de novo</button>
+    <button class="btn-secundario" onclick="voltarInicio()">🎨 Escolher outro artista</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Personagem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background glitter dinâmico -->
+    <div class="glitter-bg" id="glitterBackground"></div>
+
+    <!-- Botão de voltar -->
+    <a href="../index.html" class="botao-voltar" title="Voltar ao Hub de Jogos">
+        <span class="voltar-icone">🏠</span>
+        <span class="voltar-texto">Voltar</span>
+    </a>
+
+    <h1 id="titulo">
+        SELEÇÃO DE PERSONAGEM
+    </h1>
+
+    <!-- PERSONAGEM ESCOLHIDO -->
+    <div id="selecionado">
+        <!-- Imagem de corpo inteiro -->
+        <div id="imagemCorpoInteiro">
+            <!-- 
+                ═══════════════════════════════════════════════════════
+                INSTRUÇÕES PARA ADICIONAR IMAGEM DE CORPO INTEIRO:
+                1. Coloque a imagem na pasta "images"
+                2. Nomeie como "billie-full.jpg" (ou altere o src abaixo)
+                3. Tamanho recomendado: 300x600 pixels (retrato/vertical)
+                ═══════════════════════════════════════════════════════
+            -->
+            <img id="imgCorpo" src="images/billie-full.jpg" alt="Billie Eilish - Corpo inteiro">
+        </div>
+
+        <!-- Card de informações -->
+        <div id="cardInfo">
+            <img id="imgAvatar" src="images/billie.jpg" alt="Billie Eilish">
+            <h2 id="nomePrincipal">BILLIE EILISH</h2>
+            <div id="info">
+                <p><b>Nome completo:</b> Billie Eilish Pirate Baird O'Connell</p>
+                <p><b>Idade:</b> 24 anos</p>
+                <p><b>Nascimento:</b> Los Angeles, Califórnia, EUA</p>
+                <p><b>Descrição:</b> Cantora e compositora americana conhecida por sucessos como "Bad Guy" e "Ocean Eyes".</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- LISTA DE PERSONAGENS -->
+    <div id="personagens">
+        <!-- PERSONAGEM 1 -->
+        <img src="images/billie.jpg" alt="Billie Eilish"
+        onclick="trocar(
+        'images/billie-full.jpg',
+        'images/billie.jpg',
+        'BILLIE EILISH',
+        'Billie Eilish Pirate Baird OConnell',
+        '24 anos',
+        'Los Angeles, Califórnia, EUA',
+        'Cantora e compositora americana conhecida por sucessos como Bad Guy e Ocean Eyes.'
+        )">
+
+        <!-- PERSONAGEM 2 -->
+        <img src="images/pink.jpg" alt="PinkPantheress"
+        onclick="trocar(
+        'images/pink-full.jpg',
+        'images/pink.jpg',
+        'PINKPANTHERESS',
+        'Victoria Beverley Walker',
+        '25 anos',
+        'Bath, Inglaterra',
+        'Cantora, compositora e produtora britânica conhecida por misturar pop, drum and bass e música eletrônica em sucessos como Boy\'s a Liar Pt. 2 e Pain.'
+        )">
+
+        <!-- PERSONAGEM 3 -->
+        <img src="images/ariana.jpg" alt="Ariana Grande"
+        onclick="trocar(
+        'images/ariana-full.jpg',
+        'images/ariana.jpg',
+        'ARIANA GRANDE',
+        'Ariana Grande Butera',
+        '33 anos',
+        'Flórida, EUA',
+        'Cantora e atriz americana famosa por sua grande extensão vocal.'
+        )">
+
+        <!-- PERSONAGEM 4 -->
+        <img src="images/kali.jpg" alt="Kali Uchis"
+        onclick="trocar(
+        'images/kali-full.jpg',
+        'images/kali.jpg',
+        'KALI UCHIS',
+        'Karly Marina Loaiza',
+        '31 anos',
+        'Virgínia, EUA',
+        'Cantora colombo-americana conhecida por misturar R&B e música latina.'
+        )">
+
+        <!-- PERSONAGEM 5 -->
+        <img src="images/lana.jpg" alt="Lana Del Rey"
+        onclick="trocar(
+        'images/lana-full.jpg',
+        'images/lana.jpg',
+        'LANA DEL REY',
+        'Elizabeth Woolridge Grant',
+        '41 anos',
+        'Nova York, EUA',
+        'Cantora americana conhecida pelo estilo melancólico e cinematográfico.'
+        )">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

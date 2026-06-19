@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background glitter dinâmico -->
+    <div class="glitter-bg" id="glitterBackground"></div>
+
+    <!-- Botão de voltar -->
+    <a href="../index.html" class="botao-voltar" title="Voltar ao Hub de Jogos">
+        <span class="voltar-icone">🏠</span>
+        <span class="voltar-texto">Voltar</span>
+    </a>
+
+    <div class="container">
+        <!-- Decorações flutuantes -->
+        <div class="decoracao decor-1">✨</div>
+        <div class="decoracao decor-2">💫</div>
+        <div class="decoracao decor-3">⭐</div>
+        <div class="decoracao decor-4">💗</div>
+
+        <!-- Cabeçalho -->
+        <div class="header">
+            <h1>JOGO DA VELHA</h1>
+            <p>✦ X vs O ✦</p>
+        </div>
+
+        <!-- Status -->
+        <div class="status" id="status">
+            Vez do Jogador <span id="vez">X</span>
+        </div>
+
+        <!-- Placar -->
+        <div class="placar">
+            <div class="placar-item placar-x">
+                <span class="simbolo">❌</span>
+                <span class="pontos" id="pontosX">0</span>
+                <span class="label-placar">Vitórias</span>
+            </div>
+            <div class="placar-item placar-o">
+                <span class="simbolo">⭕</span>
+                <span class="pontos" id="pontosO">0</span>
+                <span class="label-placar">Vitórias</span>
+            </div>
+        </div>
+
+        <!-- Tabuleiro -->
+        <div class="tabuleiro" id="tabuleiro">
+            <div class="celula" data-index="0"></div>
+            <div class="celula" data-index="1"></div>
+            <div class="celula" data-index="2"></div>
+            <div class="celula" data-index="3"></div>
+            <div class="celula" data-index="4"></div>
+            <div class="celula" data-index="5"></div>
+            <div class="celula" data-index="6"></div>
+            <div class="celula" data-index="7"></div>
+            <div class="celula" data-index="8"></div>
+        </div>
+
+        <!-- Botões -->
+        <div class="botoes">
+            <button class="btn btn-reiniciar" id="reiniciar">🔄 Nova Partida</button>
+            <button class="btn btn-zerar" id="zerar">🗑️ Zerar Placar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

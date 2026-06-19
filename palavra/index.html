@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>📝 Descubra a Palavra | CHANEL 67</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <a href="../index.html" class="botao-voltar" title="Voltar ao Hub de Jogos">
+        <span class="voltar-icone">🏠</span>
+        <span class="voltar-texto">Voltar</span>
+    </a>
+
+    <div class="container">
+        <div class="header">
+            <div class="icone">📝🔍</div>
+            <h1>DESCUBRA A PALAVRA</h1>
+            <p>✦ Jogador 1 cria a palavra | Jogador 2 adivinha ✦</p>
+        </div>
+
+        <!-- Área do Jogador 1 -->
+        <div class="card criar-palavra">
+            <div class="card-header">
+                <span class="card-icone">✏️</span>
+                <h3>JOGADOR 1 - CRIE A PALAVRA</h3>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <label>📖 PALAVRA SECRETA:</label>
+                    <input type="password" id="palavra" placeholder="Digite a palavra...">
+                </div>
+                <div class="input-group">
+                    <label>💡 DICA:</label>
+                    <input type="text" id="dica" placeholder="Digite uma dica...">
+                </div>
+                <button class="btn-enviar" onclick="iniciar()">
+                    <span>✨</span> INICIAR JOGO <span>✨</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Área do Jogador 2 -->
+        <div class="card jogo-area" id="jogoArea" style="display: none;">
+            <div class="card-header">
+                <span class="card-icone">🎯</span>
+                <h3>JOGADOR 2 - ADIVINHE</h3>
+            </div>
+            <div class="card-body">
+                <div class="dica-box">
+                    <span class="dica-label">💡 DICA:</span>
+                    <span class="dica-texto" id="dicaTela">---</span>
+                </div>
+
+                <div class="palavra-box">
+                    <span class="palavra-label">📝 PALAVRA:</span>
+                    <div class="palavra-letras" id="palavraTela"></div>
+                </div>
+
+                <div class="tentativas-box">
+                    <span class="tentativas-label">❤️ TENTATIVAS RESTANTES:</span>
+                    <span class="tentativas-numero" id="tentativasTela">5</span>
+                </div>
+
+                <div class="chutadas-box">
+                    <span class="chutadas-label">🔤 LETRAS CHUTADAS:</span>
+                    <span class="chutadas-texto" id="chutadasTela"></span>
+                </div>
+
+                <button class="btn-chutar" onclick="chutar()">
+                    <span>🔍</span> CHUTAR LETRA <span>🔍</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
